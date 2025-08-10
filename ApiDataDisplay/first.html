@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Data</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        /* height: 100vh; */
+        background-color: rgb(149, 143, 143);
+    }
+
+    #parent {
+        position: sticky;
+        top: 0px;
+        width: 100%;
+        height: 100px;
+        background-color: white;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 100px;
+        /* left: 0px; */
+
+    }
+
+    #parent a {
+        padding: 20px;
+        text-decoration: none;
+
+    }
+
+    #parent a:hover {
+        background-color: green;
+        color: white;
+        border-radius: 10px;
+
+        border-bottom: 2px solid red;
+    }
+
+    .submain {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+    }
+
+    #nav-bar {}
+</style>
+
+<body>
+    <div id="parent">
+        <div>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/product">Product</a>
+
+        </div>
+    </div>
+    <div>
+        <div class="submain">{{%content%}}</div>
+    </div>
+</body>
+
+</html>
